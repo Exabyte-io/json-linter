@@ -4,8 +4,8 @@ from typing import Optional, Union
 from json_linter.config import LinterConfig
 from json_linter.utils import natural_keys
 
-
-def rule_keys_are_sorted(
+# TMP disable sorting by prepending `_` below
+def _rule_keys_are_sorted(
     data: Union[dict, list],
     _config: LinterConfig
 ) -> (bool, Optional[str]):
